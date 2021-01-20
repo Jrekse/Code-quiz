@@ -1,0 +1,31 @@
+#score-bar {
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#quiz-time {
+    text-align: right;
+}
+
+#view-hscore {
+    color: black;
+}
+
+#main-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#question-box {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#quiz-body {
+    text-align: center;
+}
+
+#start-quiz-btn {
+    color: black;
+}
