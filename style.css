@@ -10,6 +10,11 @@
 
 #view-hscore {
     color: black;
+    overflow: hidden;
+}
+
+#score-title {
+    overflow: hidden;
 }
 
 #main-title {
