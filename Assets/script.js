@@ -95,7 +95,7 @@ var allDone = document.createTextNode("All Done!");
 //highscores
 highScore.addEventListener("click", function(){
     var showHS = localStorage.getItem(response);
-    alert("The Highscore is: " + showHS);
+    alert("The Last Score was: " + showHS);
     
 });
 
