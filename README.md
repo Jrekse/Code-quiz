@@ -6,7 +6,10 @@ This project is a timed, 5 question quiz with a time penalty for incorrect answe
 Your points are displayed as you go and your score will be logged to the local storage along with your initials. 
 This score can be viewed at any time by clicking "view highscore".
 
+Technology
 This project focuses mainly on Web API's, which were difficult to figure out for me personally
+I also used the DOM method rather than jQuery because it makes more sense to me
+The framework used to style this app was Bootstrap
 
 The code below shows how the questionOne function changes the HTML and logs correct and incorrect answers
 
