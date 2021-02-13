@@ -1,13 +1,14 @@
 # Code-quiz
+
+Live URL (not live):https://jrekse.github.io/Coding-quiz
+
 This project is a timed, 5 question quiz with a time penalty for incorrect answers. 
 Your points are displayed as you go and your score will be logged to the local storage along with your initials. 
 This score can be viewed at any time by clicking "view highscore".
 
 This project focuses mainly on Web API's, which were difficult to figure out for me personally
 
-
-
-the code below shows how the questionOne function changes the HTML and logs correct and incorrect answers
+The code below shows how the questionOne function changes the HTML and logs correct and incorrect answers
 
             //Displays the first question
             function questionOne(){
