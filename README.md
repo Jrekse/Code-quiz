@@ -12,6 +12,8 @@ I also used the DOM method rather than jQuery because it makes more sense to me
 The framework used to style this app was Bootstrap
 
 ![alt text](Assets/ss1.png)
+![alt text](Assets/ss2.png)
+![alt text](Assets/ss3.png)
 
 The code below shows how the questionOne function changes the HTML and logs correct and incorrect answers
 
