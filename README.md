@@ -160,3 +160,8 @@ when youLost is called, the used is given an alert saying they have ran out of t
 
 after completing question five, a variable is made to represent your score, and a display with your score is made with a submit button below it.
 this is done by removing all but one of the previous buttons. once submit is pressed the user will be prompted to give initials, then it logs both name and score to local storage and reloads the quiz.
+
+Contact info:
+
+Email: jrekse@gmail.com
+Phone: 503-791-9996
