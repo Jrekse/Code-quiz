@@ -1,23 +1,4 @@
-function go(){
 
-    (function(){
-
-        setInterval(function() {
-            counter--;
-            if (counter >= 0) {
-            span = document.getElementById("count");
-            span.innerHTML = counter;
-            }
-            if (counter === 0) {
-                clearInterval(counter);
-                youLost();
-            } 
-
-        }, 1000);
-
-    })();
-
-}  
 
 //Global Variables -------------------------------------------------------------------------------------------------------------------------------------------
 var testFunc = 69;
@@ -91,17 +72,7 @@ var questionFiveText = document.createTextNode("A very useful tool used during d
 var allDone = document.createTextNode("All Done!");
 
 
-//highscores
-highScore.addEventListener("click", function(){
-    runHscore();
-});
 
-function runHscore(){
-    var showHS = localStorage.getItem(response);
-    var displayHighscore = document.querySelector("#score-list")
-    hScoreLi.appendChild(showHS);
-    displayHighscore.appendChild(hScoreLi)
-}
 //Functions -------------------------------------------------------------------------------------------------------------------------------------------------
 
 //Subtracts from timer
@@ -114,9 +85,22 @@ startQuiz.addEventListener("click", function() {
     go();
     questionOne();
 });
-
 //Starts timer
-
+function go(){
+    (function(){
+        setInterval(function() {
+            counter--;
+            if (counter >= 0) {
+            span = document.getElementById("count");
+            span.innerHTML = counter;
+            }
+            if (counter === 0) {
+                clearInterval(counter);
+                youLost();
+            } 
+        }, 1000);
+    })();
+}  
 
 //Displays the first question
 function questionOne(){
@@ -436,7 +420,7 @@ function finishPage(){
 
     quizBtnOne.addEventListener("click", function(){
         var playerInput = prompt("Initials:");
-        var setScore = '"' + playerInput + '"' + " : " + righto + "/5";
+        var setScore = "" + playerInput + "" + " : " + righto + "/5";
         localStorage.setItem(response, setScore);
         
             
