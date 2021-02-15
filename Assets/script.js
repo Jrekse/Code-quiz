@@ -419,7 +419,7 @@ function finishPage(){
     div.append(quizBtnOne);
 
     quizBtnOne.addEventListener("click", function(){
-        var playerInput = prompt("Initials:");
+        var playerInput = prompt("Name:");
         var setScore = "" + playerInput + "" + " : " + righto + "/5";
         localStorage.setItem(response, setScore);
         

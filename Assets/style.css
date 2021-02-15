@@ -46,6 +46,8 @@
 
 #score-list{
     text-align: center;
+    width:fit-content;
+    margin-left: 120px;
 }
 #score-list-cont{
     text-align: center;
