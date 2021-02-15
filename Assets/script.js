@@ -6,6 +6,8 @@ var highscore = 0;
 var time = 0;
 var right = 0;
 var response;
+var responseTwo;
+var responseThree;
 var counter = 75;
 
 //Query selectors
@@ -56,6 +58,8 @@ var quizBtnTwo = document.createElement("BUTTON");
 var quizBtnThree = document.createElement("BUTTON");
 var quizBtnFour = document.createElement("BUTTON");
 var hScoreLi = document.createElement("LI");
+var hScoreLiTwo = document.createElement("LI");
+var hScoreLiThree = document.createElement("LI");
 
 //set HTML classes
 quizBtnOne.setAttribute("class", "btn btn-outline-info");
@@ -420,11 +424,11 @@ function finishPage(){
 
     quizBtnOne.addEventListener("click", function(){
         var playerInput = prompt("Name:");
+        
+        
         var setScore = "" + playerInput + "" + " : " + righto + "/5";
         localStorage.setItem(response, setScore);
         
-            
-
         window.location.reload();
     });
     

@@ -6,4 +6,6 @@ document.getElementById("show-score").addEventListener("click", function runHsco
     hScoreLi.appendChild(nodify);
     displayHighscore.appendChild(hScoreLi)
     console.log(nodify)
+
+    
 }) 
