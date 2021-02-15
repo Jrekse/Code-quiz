@@ -1,7 +1,6 @@
 function go(){
 
     (function(){
-        //var counter = 75;
 
         setInterval(function() {
             counter--;
@@ -27,7 +26,6 @@ var time = 0;
 var right = 0;
 var response;
 var counter = 75;
-//var righto = right +1;
 
 //Query selectors
 var startQuiz = document.querySelector("#start-btn");
@@ -95,7 +93,7 @@ var allDone = document.createTextNode("All Done!");
 //highscores
 highScore.addEventListener("click", function(){
     var showHS = localStorage.getItem(response);
-    alert("The Last Score was: " + showHS);
+    
     
 });
 
