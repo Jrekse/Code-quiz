@@ -74,6 +74,7 @@ var quizBtnOne = document.createElement("BUTTON");
 var quizBtnTwo = document.createElement("BUTTON");
 var quizBtnThree = document.createElement("BUTTON");
 var quizBtnFour = document.createElement("BUTTON");
+var hScoreLi = document.createElement("LI");
 
 //set HTML classes
 quizBtnOne.setAttribute("class", "btn btn-outline-info");
@@ -92,11 +93,15 @@ var allDone = document.createTextNode("All Done!");
 
 //highscores
 highScore.addEventListener("click", function(){
-    var showHS = localStorage.getItem(response);
-    
-    
+    runHscore();
 });
 
+function runHscore(){
+    var showHS = localStorage.getItem(response);
+    var displayHighscore = document.querySelector("#score-list")
+    hScoreLi.appendChild(showHS);
+    displayHighscore.appendChild(hScoreLi)
+}
 //Functions -------------------------------------------------------------------------------------------------------------------------------------------------
 
 //Subtracts from timer
